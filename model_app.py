@@ -30,4 +30,4 @@ def predict(data: Input) -> Output:
     prediction = model.predict(X_input)
     intercept = model.named_steps['model'].intercept_
     slope = model.named_steps['model'].coef_[0]
-    return Output(y = prediction, slope = slope, intercept = intercept, status = "success")
+    return Output(y = prediction, slope = slope, intercept = intercept, status = "Hurray! You have made it")
